@@ -1,0 +1,27 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: clean-css
+    versions:
+    - 4.2.3
+    - 5.0.1
+    - 5.1.0
+    - 5.1.1
+  - dependency-name: monaco-json
+    versions:
+    - 3.3.0
+  - dependency-name: monaco-typescript
+    versions:
+    - 4.2.0
+  - dependency-name: monaco-html
+    versions:
+    - 3.2.0
+  - dependency-name: handlebars
+    versions:
+    - 4.7.6
